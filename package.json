@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package" : "docker-compose run --rm composer composer install",
-    "package:update" : "docker-compose run --rm composer composer update",
+    "install": "docker-compose run --rm composer install",
+    "update": "docker-compose run --rm composer update",
+    "artisan": "docker-compose run --rm artisan",
+    "npm": "docker-compose run --rm npm",
     "start": "docker-compose up -d server mysql php",
     "stop": "docker-compose down",
     "stop:v": "docker-compose down -v"
